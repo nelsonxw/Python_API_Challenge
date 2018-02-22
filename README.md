@@ -1,3 +1,26 @@
+# WeatherPy
+
+### Analysis
+* Observed trend 1  
+  
+  
+  
+  <br>
+
+* Observed trend 2  
+  
+  
+  
+  <br>
+  
+
+* Observed trend 3  
+  
+  
+  
+  <br>
+  
+  [Link to codes and results]()
 
 
 ```python
@@ -20,7 +43,7 @@ lon = range(-180,180,10)
 current_date = datetime.date.today().strftime('%m/%d/%Y')
 ```
 
-
+## Generate Cities List
 ```python
 # create list of locations with latitude and longitude
 loc = [(x,y) for x in lat for y in lon]
@@ -36,7 +59,7 @@ for lat,lon in loc:
         cities.append((cityname,countrycode))
 ```
 
-
+## Perform API Calls
 ```python
 # create a list to hold retrieved data
 results = []
@@ -1146,19 +1169,7 @@ df_weather.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
 
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1240,7 +1251,7 @@ df_weather.head()
 </div>
 
 
-
+## Latitude vs. Temperature Plot
 
 ```python
 # create subplot to show relationship between latitude and max temperation
@@ -1267,7 +1278,7 @@ plt.show()
 ![png](output_8_0.png)
 
 
-
+## Latitude vs. Humidity Plot
 ```python
 # create subplot to show relationship between latitude and humidity
 fig,ax = plt.subplots(figsize=(9,6))
@@ -1293,7 +1304,7 @@ plt.show()
 ![png](output_9_0.png)
 
 
-
+## Latitude vs. Cloudiness Plot
 ```python
 # create subplot to show relationship between latitude and cloudiness
 fig,ax = plt.subplots(figsize=(9,6))
@@ -1319,9 +1330,9 @@ plt.show()
 ![png](output_10_0.png)
 
 
-
+## Latitude vs. Wind Speed Plot
 ```python
-# create subplot to show relationship between latitude and cloudiness
+# create subplot to show relationship between latitude and wind speed
 fig,ax = plt.subplots(figsize=(9,6))
 # use Seaborn style
 sns.set()
