@@ -20,7 +20,7 @@
   
   <br>
   
-  [Link to codes and results]()
+  [Link to codes and results](https://github.com/nelsonxw/Python_API_Challenge/blob/master/weather.ipynb)
 
 
 ```python
