@@ -2,20 +2,20 @@
 
 ### Analysis
 * Observed trend 1  
-  
+  Temperature has a strong relationship with the latitude of a location.  Generally, the lower the latitude, the higher the temperature.
   
   
   <br>
 
 * Observed trend 2  
-  
+  Cities in lower latitudes seems to have a narrower spread of humidity numbers and most of them have high humidities, however, the correlation is not very strong.
   
   
   <br>
   
 
 * Observed trend 3  
-  
+  There is no obvious evidence to show relationships between latitude and cloudiness or wind speed.
   
   
   <br>
