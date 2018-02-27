@@ -32,6 +32,7 @@ import requests as req
 import matplotlib.pyplot as plt
 import seaborn as sns
 from citipy import citipy
+import config
 ```
 
 
@@ -65,7 +66,7 @@ for lat,lon in loc:
 results = []
 # define API endpoint, key and unit value
 url = 'http://api.openweathermap.org/data/2.5/weather?'
-api_key = "25bc90a1196e6f153eece0bc0b0fc9eb"
+api_key = config.api_key
 unit = 'imperial'
 record_count = 0
 # print the header of the data retrieval log
