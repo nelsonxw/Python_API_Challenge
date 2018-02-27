@@ -22,7 +22,6 @@
   
   [Link to codes and results](https://github.com/nelsonxw/Python_API_Challenge/blob/master/weather.ipynb)
 
-
 ```python
 # import dependencies
 import time
@@ -44,7 +43,7 @@ lon = range(-180,180,10)
 current_date = datetime.date.today().strftime('%m/%d/%Y')
 ```
 
-## Generate Cities List
+
 ```python
 # create list of locations with latitude and longitude
 loc = [(x,y) for x in lat for y in lon]
@@ -60,7 +59,7 @@ for lat,lon in loc:
         cities.append((cityname,countrycode))
 ```
 
-## Perform API Calls
+
 ```python
 # create a list to hold retrieved data
 results = []
@@ -1175,7 +1174,19 @@ df_weather.head()
 
 
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1195,69 +1206,68 @@ df_weather.head()
     <tr>
       <th>0</th>
       <td>Vaini</td>
-      <td>20</td>
+      <td>100</td>
       <td>TO</td>
-      <td>1519336800</td>
-      <td>62</td>
+      <td>1519747358</td>
+      <td>100</td>
       <td>-21.20</td>
       <td>-175.20</td>
-      <td>87.80</td>
-      <td>3.36</td>
+      <td>81.91</td>
+      <td>10.78</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Rikitea</td>
-      <td>100</td>
+      <td>24</td>
       <td>PF</td>
-      <td>1519340647</td>
+      <td>1519747360</td>
       <td>100</td>
       <td>-23.12</td>
       <td>-134.97</td>
-      <td>80.95</td>
-      <td>5.30</td>
+      <td>79.66</td>
+      <td>17.72</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Punta Arenas</td>
-      <td>75</td>
+      <td>90</td>
       <td>CL</td>
-      <td>1519336800</td>
-      <td>54</td>
+      <td>1519747200</td>
+      <td>57</td>
       <td>-53.16</td>
       <td>-70.91</td>
-      <td>59.00</td>
-      <td>23.04</td>
+      <td>50.00</td>
+      <td>9.17</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Ushuaia</td>
-      <td>40</td>
+      <td>90</td>
       <td>AR</td>
-      <td>1519336800</td>
-      <td>58</td>
+      <td>1519747200</td>
+      <td>53</td>
       <td>-54.81</td>
       <td>-68.31</td>
-      <td>59.00</td>
-      <td>13.87</td>
+      <td>51.80</td>
+      <td>10.29</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Hermanus</td>
-      <td>80</td>
+      <td>0</td>
       <td>ZA</td>
-      <td>1519340651</td>
-      <td>94</td>
+      <td>1519747367</td>
+      <td>46</td>
       <td>-34.42</td>
       <td>19.24</td>
-      <td>61.96</td>
-      <td>2.84</td>
+      <td>75.83</td>
+      <td>5.41</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-## Latitude vs. Temperature Plot
 
 
 ```python
@@ -1284,7 +1294,6 @@ plt.show()
 
 ![png](output_8_0.png)
 
-## Latitude vs. Humidity Plot
 
 
 ```python
@@ -1312,7 +1321,6 @@ plt.show()
 ![png](output_9_0.png)
 
 
-## Latitude vs. Cloudiness Plot
 
 ```python
 # create subplot to show relationship between latitude and cloudiness
@@ -1338,7 +1346,6 @@ plt.show()
 
 ![png](output_10_0.png)
 
-## Latitude vs. Wind Speed Plot
 
 
 ```python
