@@ -1,4 +1,4 @@
-# WeatherPy
+# Visualization of the weather across world cities
 
 ### Analysis
 * Observed trend 1  
